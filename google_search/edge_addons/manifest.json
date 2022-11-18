@@ -1,0 +1,26 @@
+{
+
+    "manifest_version": 3,
+    "name": "scrape addons",
+    "version": "1.0",
+    "description": "Scrape google search page websites links",
+    "icons": {
+      "128": "icons/border-128.png",
+      "96": "icons/border-96.png",
+      "48": "icons/border-48.png",
+      "32": "icons/border-32.png",
+      "16": "icons/border-16.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.bing.com/search?*"],
+        "js": ["scrape.js"]
+      }
+    ],
+    "action":{
+      "default_popup": "popup/index.html",
+      "default_title": "Dream to real web scraper"
+  }
+}
+  

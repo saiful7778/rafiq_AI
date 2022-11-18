@@ -1,0 +1,29 @@
+{
+
+    "manifest_version": 2,
+    "name": "scrape addons",
+    "version": "1.0",
+    "description": "Scrape google search page websites links",
+    "icons": {
+      "96": "icons/border-96.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.google.com/search?*"],
+        "js": ["scrape.js"]
+      }
+    ],
+    "permissions": [
+      "*://google-links-scraping.herokuapp.com/*"
+    ],
+    "browser_action": {
+        "default_icon": {
+            "96": "icons/border-96.png"
+        },
+        "default_title": "Dream to real web scraper",
+        "default_popup": "popup/index.html"
+    }
+  
+  }
+  
