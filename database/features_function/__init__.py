@@ -1,3 +1,0 @@
-from features_function.google_search import search_on_google
-from features_function.search_and_scrape import open_links
-from features_function.web_template import website
